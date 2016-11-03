@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>baidu ife stage1-task04</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.main{
+		width: 400px;
+		height: 200px;
+		background: #CCC;		
+		position: absolute; /*使用position:absolute定位，以浏览器body为基准，距上和距下都是50%*/
+		left: 50%;
+		top: 50%;
+		margin-left: -200px;	/*代替了transform:translateX(-50%),以自身宽度的50%向左移动，兼容性考虑，原理一样。translate,中文意思是翻译，平移的意思*/
+		margin-top: -100px;  /*代替了transform:translateY(-50%),以自身高度的50%向上移动，兼容性考虑，原理一样*/
+		
+	}
+	.left_top_area{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		background: #fc0;
+		border-radius: 0 0 50px 0;	/*border-radius还得看，四个角的意思是左上角，右上角，右下角，左下角*/
+	}
+	.right_bottom_area{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		background: #fc0;
+		border-radius: 50px 0 0 0; 
+		right: 0;
+		bottom: 0;	
+	}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+        <p class="left_top_area"></p>
+        <p class="right_bottom_area"></p>
+	</div>
+</body>
+</html>
