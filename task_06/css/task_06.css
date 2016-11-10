@@ -1,0 +1,208 @@
+
+body {
+	background-color: #ccc;
+}
+#wrapper {
+	width: 893px;
+	height: 1339px;
+	margin: 0 auto;
+	padding: 0 43px 47px 44px;
+	background-color: #fff;
+}
+/*头部样式*******************************/
+#head {
+	width: 892px;
+	height: 61px;
+	border-bottom: 2px solid #938e8c;
+}
+.head_bg {
+	width: 110px;
+	height: 61px;
+	float: left;            /*如果你想顺序写，那么就就让左边块左浮动，右边框右浮动*/
+	background-color: #d45d5c;
+} 
+span.text {
+	display: block;           /*行级元素不能设置宽度和高度，也不能设置padding和margin*/
+	padding-top: 46px;
+	padding-left: 7px;
+	color: #fff;
+}
+span.head_time {
+	float: right;
+	color: #d45d5c;
+	padding-top: 46px;
+}
+#head span,#foot span {
+	font-size: 12px;
+	line-height: 14px;
+	font-family: "黑体";
+}
+/*中间样式************************************/
+#main {
+	margin-top: 34px;
+}	
+.main_top_img {
+	position: relative;
+	width: 641px;
+	height: 301px;
+	float: left;
+	margin: 0 48px 41px 0;
+
+}
+.hover_green {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999；
+}
+.hover_red {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 999;
+}
+.main_top_content {
+	/*padding-top: 6px;*/
+	border-top: 2px solid #cc8091; 
+	width: 203px;
+	height: 300px;
+	float: right;
+	position: relative;
+}
+p.title{
+	font-size: 24px;
+	color: #000;
+	font-family: "Microsoft Yahei";
+	text-decoration: underline;
+	line-height: 30px;            /*content-area高度 + 行间距 = 行高*/
+	font-variant: small-caps;          /*采用不用大小的大写字母，只要文本源中出现大写字母，会显示一个更大的大写字母，而只要文本中出现一个小写字母，就会显示一个小型的大写字母*/
+}
+p.sub_title {
+	font-size: 12px;
+	font-family: "楷体";
+	color: #676767;
+	line-height: 10px;
+}
+p.seven {
+	font-size: 116px;
+	color: #75b86b;
+	font-family: "Microsoft Yahei";
+	font-style: oblique;
+	margin-left: -16px;        /*要自己根据位置在chrom中做调试*/
+}
+p.num,p.big,p.small {
+	font-family: "Microsoft Yahei";
+	color: #cc8091;
+}
+p.num {
+	font-size: 55px;
+	position: absolute;
+	bottom: -10px;
+	left: 10px;
+}
+p.big {
+	font-size: 21px;
+	position: absolute;
+	bottom: 12px;
+	left: 90px;
+}
+p.small {
+	font-size: 12px;
+	position: absolute;
+	left: 90px;
+	bottom: 0;
+}
+/*main_center样式***********************************************/
+.main_center {
+	height: 168px;
+}
+div.what {
+	width: 228px;
+	color: #767777;
+	font-family: "宋体";
+	line-height: 16px;
+}         
+div.when {
+	width: 204px;
+	margin-left: 28px;
+	font-family: "Microsoft Yahei";
+	color: #231815;
+	opacity: 0.7;
+	line-height: 16px;
+}
+div.how {
+	width: 132px;
+	margin-left: 30px;
+	font-family: "Microsoft Yahei";
+	opacity: 0.7;
+	line-height: 21px;
+}
+div.what,div.when,div.how {
+	float: left;
+	font-size: 12px;
+} 
+div.what h1,div.when h1,div.how h1 {
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: underline;
+	font-family: "Microsoft Yahei";
+}
+div.what h1 {
+	color: #418c59;
+	margin-bottom: 13px;
+}
+div.when h1 {
+	color: #d2994f;
+	margin-bottom: 13px;
+}
+div.how h1 {
+	color: #cc7680;
+	margin-bottom: 6px;
+}
+p.detail {
+	margin-top: 21px;
+}
+p.detail span {
+	color: #cd4a48;
+	font-style: oblique;
+	opacity: 0.7;
+}
+/*main_bottom样式*****************************/
+.main_bottom {
+	margin: 76px 0 39px; 
+	height: 608px;
+}
+.main_bottom_left {
+	float: left;
+	width: 415px;
+}
+.main_bottom_left_t {
+	height: 153px;
+	font-family: "黑体";
+	font-size: 42px;
+	color: #11456b;
+	line-height: 40px;
+}
+.main_bottom_left_t {
+
+}
+span.the {
+	color: #f5e327;
+	font: 72px "黑体" bold;
+	font-style: oblique;
+}
+/*main_bottom_right样式**************************/
+.main_bottom_right {
+	float: right;
+	width: 458px;
+}
+/*底部样式************************************/
+#foot {
+	border-top: 1px solid #938e8c;
+}
+#foot span {
+	padding-top: 2px;
+	color: #d45d5c;
+	float: right;
+}
+
