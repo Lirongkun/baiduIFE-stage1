@@ -1,29 +1,25 @@
-*{
-    margin:0;
-    padding:0;
-}
 body{
-    font-family:'Microsoft YaHei';
-    background:#dedede;
+    font-family: 'Microsoft YaHei';
+    background: #dedede;
 }
 /*头部*//*************************************************/
 header{
-    position:relative;
-    height:60px;
-    background:#333;
+    position: relative;
+    height: 60px;
+    background: #333;
 }
 header p img{
-    padding-left:20px;
-    height:60px;
+    padding-left: 20px;
+    height: 60px;
 }
 header nav ul{
-    position:absolute;
-    top:0;
-    right:10px;
+    position: absolute;
+    top: 0;
+    right: 0px;
 }
 header ul li{
-    float:left;
-    line-height: 60px;     /*垂直居中*/
+    float: left;
+    line-height: 60px; 
 }
 header ul li a{
     display: block;
@@ -38,120 +34,119 @@ nav ul li a:hover{
 }
 /*主体部分*//*************************************************/
 article, aside{
-    margin:30px;
-    padding:20px;
-    background:white;
-    box-shadow:1px 1px 2px 1px #848484;
+    margin: 30px;
+    padding: 20px;
+    background: white;
+    box-shadow: 1px 1px 2px 1px #848484;
     /*box-shadow,它的语法是向框添加一个或多个阴影，h-shadow(必须，水平阴影的位置)，v-shadow(必须，垂直阴影的位置)
     blur(模糊距离)，spread（阴影的尺寸），color（阴影的颜色），inset（可将外部阴影outset改为inset）*/
 }
 article h2{
-    padding:5px 0;
+    padding: 5px 0;
 }
 article h3{
-    padding:10px 0;
-    color:#808080;
-    font-size:16px;
+    padding: 10px 0;
+    color: #808080;
+    font-size: 16px;
 }
 article a{
-    color:blue;
+    color: blue;
 }
 article a:hover{
-    color:red;
+    color: red;
 }
 .author, .aTime{
-    line-height:30px;
-    color:#808080;
-    font-size:12px;
+    line-height: 30px;
+    color: #808080;
+    font-size: 12px;
 }
 article p{
-    text-indent:2em;       /*缩进了2em*/
+    text-indent: 2em;       /*所有p段落首行文本缩进了2em*/
 }
 article img{
-    padding:15px 0;
+    padding: 10px 0;
 }
 article dl dd{
-    width:120px;
-    margin:15px;
-    border:1px solid #ccc;
+    width: 120px;
+    margin: 15px;
+    border: 1px solid #ccc;
 }
 article dl dd span{
-    display:block;
-    font-size:12px;
-    text-align:center;
-    margin:5px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    margin: 2px;
 }
 article dl dd img{
-    width:110px;
-    padding:5px;
+    width: 110px;
+    padding: 5px;
 }
 article ol{
     margin: 10px 40px;
 }
 article table{
-    width:100%;
+    width: 100%;        /*表格的宽度默认是所包含的内容占据的宽度*/
     border-collapse: collapse;/*设置表格的边框被合并为一个单一的边框*/
 
 }
 article table tr th{
-    color:white;
-    background:#333;
+    color: white; 
+    background: #333;
 }
 article table tr td{
     border-color: #ccc;
 }
 article table .buttonTable{
-    background:#ccc;
+    background: #ccc;
 }
 /*侧栏*//*************************************************/
-aside h4{
-    height:40px;
-    line-height:40px;
-    padding-left:10px;
-    border-left:3px solid #ccc;
+aside h3{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-left: 3px solid #ccc;
 }
 aside form div{
     font-size: 14px;
-    margin:15px 0;
+    margin: 15px 0;
 }
 
 aside form div .tips{
-    float:left;           
-    text-align:right;
-    width:35%;
-    padding-right:15px;
+    float: left;     /*使用浮动，浮动元素会生成一个块级框，而不论这个元素本身是什么，只要加浮动就会生成一个块级框，可以设置宽高。*/      
+    text-align: right;
+    width: 35%;
+    padding-right: 15px;
 }
 aside form div p{
-    margin-left:35%;
-    padding-left:15px;
-    font-size:12px;
+    margin-left: 35%;
+    padding-left: 15px;
+    font-size: 12px;
     color: #aaa;
 }
 aside textarea{
-    width:50%;
-    height:100px;
+    width: 50%;
+    height: 100px;
 
 }
 aside .submitButton{
-    width:100%;
-    height:40px;
+    width: 100%;
+    height: 40px;
     border-radius: 10px;
     background: #128fdc;
     color: white;
     font-size: 19px;
-    border:none;
+    border-style: none;
 }
 aside .submitButton:hover{
     background: #0063dc;
 
 }
-/*底部*//*hollowtree************************************************/
+/*底部*************************************************/
 footer{
-    width:100%;
-    height:50px;
-    background:black;
-    color:white;
-    text-align:center;
-    line-height:50px;
-    font-size:14px;
+    height: 50px;
+    background: black ;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
 }

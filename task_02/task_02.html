@@ -2,15 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>baidu ife stage1-task2</title>
+        <title>baidu ife stage1-task02</title>
         <link rel="stylesheet" href="css/reset.css" type="text/css" />
         <link rel="stylesheet" href="css/task-02.css" type="text/css" />
     </head>
     <body>
-       <!--  banner的意思是横幅广告 -->
         <header data-role="banner">
             <p>
-                <a href="#"><img src="imgs/logo.png"/></a>
+                <a href="#"><img src="imgs/logo.png" width="60px" height="60px" alt="logo" /></a>
             </p>
             <nav data-role="navigation">
                 <ul>
@@ -20,7 +19,7 @@
                     <li><a href="#" target="_blank">链接四</a></li>
                 </ul>
             </nav>
-        </header>  
+        </header><!--header层结束-->  
         <main data-role="main">
             <article>
                 <h2>文章一级标题</h2>
@@ -31,9 +30,9 @@
                    在包括朝鲜核问题和中日韩自由贸易协定等方面，能够合作的空间很多。请问，中方对今年的中日韩领导人会议<br/>有什么样的期待？为了出席这个会议，您将作为总理
                    首次访问日本。很多专家认为在中国经济转型升级当中， 日本企业能够发挥的作用很大。请问，您对中日经济关系的互补性有什么样的看法？谢谢。
                 </p>
-                    <a href="#"><img src="imgs/task-02.jpg" alt="风景" width="200px" height="200px" /></a>>
+                <img src="imgs/task-02.jpg" alt="风景" width="200px" height="200px" />
                 <p>
-                    [李克强]:去年我去韩国出席了<a href="http://ife.baidu.com">中日韩领导人会议</a>，这本是个 一年一度的会晤机制，时隔三年才重启，的确是来之不易。
+                   [李克强]:去年我去韩国出席了<a href="http://ife.baidu.com">中日韩领导人会议</a>，这本是个 一年一度的会晤机制，时隔三年才重启，的确是来之不易。
                    是否还能够顺利地进行，三方要互动，尤其是现在中日关系虽然有改善的势头，但是还不巩固，还比较脆弱，我们还应该本着双方对历史问题的<strong>原则共识</strong>，
                    而且做到言行一致。我可不愿意看到再走<em>回头路</em>。
                 </p>
@@ -43,8 +42,7 @@
                 <h3>文章二级标题</h3>
                 <span class="author">文章作者 </span><span class="aTime">文章发表时间</span>
                 <p>
-                   李克强：讲到中日韩关系也使我想到一个比较轻松的话题，就是最近韩国棋手和<a href="#" target="_blank">AlphaGO</a>
-                   进行围棋人机大战，三国很多民众都比较关注，这也表明三国之间文化有相似之处。
+                   李克强：讲到中日韩关系也使我想到一个比较轻松的话题，就是最近韩国棋手和<a href="#" target="_blank">AlphaGO</a>进行围棋人机大战，三国很多民众都比较关注，这也表明三国之间文化有相似之处。
                    我不想评论这个输赢，因为不管输赢如何，这个机器<br/>还是人造的。中日韩三国或者说我们中日之间，应该有智慧来推动智能制造、发展科技合作，创造人们需要的高质量产品。
                    而且中日韩三国经济占世界经济的五分之一，是亚洲经济的70%，我们之间的互补性很强，可以携起手来去开拓更为广阔的<strong>世界市场</strong>。
                 </p>
@@ -59,10 +57,10 @@
                 <h2>图片</h2>
                 <dl>
                     <dt>好看的图片</dt>
-                    <dd><span>拥抱大海</span><img src="imgs/task-02.jpg" alt="面向大海" /></dd>
-                    <dd><span>拥抱大海</span><img src="imgs/task-02.jpg" alt="面向大海" /></dd>
-                    <dd><span>拥抱大海</span><img src="imgs/task-02.jpg" alt="面向大海" /></dd>
-                    <dd><span>拥抱大海</span><img src="imgs/task-02.jpg" alt="面向大海" /></dd>
+                    <dd><span>大海</span><img src="imgs/task-02.jpg" alt="大海" /></dd>
+                    <dd><span>大海</span><img src="imgs/task-02.jpg" alt="大海" /></dd>
+                    <dd><span>大海</span><img src="imgs/task-02.jpg" alt="大海" /></dd>
+                    <dd><span>大海</span><img src="imgs/task-02.jpg" alt="大海" /></dd>
                 </dl>
             </article>
             <article>
@@ -109,8 +107,8 @@
             </article>
         </main>
         <aside>
-            <h4>这里是一个侧栏，这是侧栏的标题</h4>
-            <form action="save.php" method="post">
+            <h3>这里是一个侧栏，这是侧栏的标题</h3>
+            <form action="#" method="post">
                 <div>
                     <label class="tips">请输入邮箱地址</label>
                     <input type="text" placeholder="邮箱" />
@@ -125,14 +123,12 @@
                     <input type="password" placeholder="请重复输入密码" />
                     <p>密码请为6-16位英文数字</p>
                 </div>
-                <!--同一组的单选按钮，name 取值一定要一致，这样同一组的单选按钮才可以起到单选的作用。-->
+                <!--同一组的单选按钮，name取值一定要一致，这样同一组的单选按钮才可以起到单选的作用。-->
                 <div>
                     <label class="tips">性别</label>
                     <!--value提交数据到服务器的值；checked默认被选中-->
-                    <input type="radio" value="male" name="sex" checked="checked" />
-                    <label>男</label>
-                    <input type="radio" value="female" name="sex" />
-                    <label>女</label>
+                    <input type="radio" value="male" name="sex" checked="checked" />男
+                    <input type="radio" value="female" name="sex" />女
                 </div>
                 <div>
                     <label class="tips">城市</label>
@@ -144,19 +140,16 @@
                 </div>
                 <div>
                     <label class="tips">爱好</label>
-                    <input type="checkbox" value="sport" name="hobby" /><!--hobby,中文意思是爱好-->
-                    <label>运动</label>
-                    <input type="checkbox" value="art" name="hobby" />
-                    <label>艺术</label>
-                    <input type="checkbox" value="science" name="hobby" />
-                    <label>科学</label>
+                    <input type="checkbox" value="sport" name="hobby" />运动
+                    <input type="checkbox" value="art" name="hobby" />艺术
+                    <input type="checkbox" value="science" name="hobby" />科学
                 </div>
                 <div>
                     <label class="tips">个人描述</label>
                     <textarea rows="2" cols="20" ></textarea>
                 </div>
                 <input type="button" class="submitButton" value="确认提交" />
-                </form>
+            </form>
         </aside>
         <footer>
             <p>版权所有&copy; 荣南坤北</p>
