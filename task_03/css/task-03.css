@@ -1,12 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
   padding: 20px;
   font-family: "微软雅黑";
-  font-size: 15px;
+  font-size: 14px;
 }
-h2{
-  margin: 0px;
-}
-.main_wrapper{
+.wrapper{
   padding: 20px;
   background: #eee;
   border: 1px solid #999;
@@ -14,7 +15,8 @@ h2{
   min-width: 600px;
 }
 .left{
-  float: left;
+  float: left;  
+  /*浮动的破坏性，是指浮动的元素可以让包裹它的容器的高度塌陷。两个特性：1，元素block块状化 2，破坏性造成的紧密排列特性(去空格化)*/
   padding: 20px;
   width: 160px;
   background: #fff;
@@ -24,10 +26,16 @@ h2{
   float: left;
 }
 .team_name{
-  width: 180px;
   font-size: 13px;
   font-weight: bold;
   text-align: center;
+}
+.middle{
+  padding: 20px;
+  margin-left: 220px;
+  margin-right: 140px;
+  background: #fff;
+  border: 1px solid #999;
 }
 .right{
   width: 120px;
@@ -41,10 +49,8 @@ h2{
   margin: 20px;
   border: 1px solid #999;
 }
-.middle{
-  padding: 20px;
-  margin-left: 220px;
-  margin-right: 140px;
-  background: #fff;
-  border: 1px solid #999;
-}
+
+/*清除浮动的方法：BFC(block formatting context)方法
+  .clearfix:after{content:".";display:block;height:0,visibility:hidden;overflow:hidden;clear:both;};
+  在ie6/7加上.clearfix{zoom:1;}... .clearfix只应该用在包含浮动子元素的父级元素上面
+*/
