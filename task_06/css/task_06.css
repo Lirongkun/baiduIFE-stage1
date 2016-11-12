@@ -4,9 +4,9 @@ body {
 }
 #wrapper {
 	width: 893px;
-	height: 1339px;
+	height: 1386px;
 	margin: 0 auto;
-	padding: 0 43px 47px 44px;
+	padding: 0 43px 0 44px;
 	background-color: #fff;
 }
 /*头部样式*******************************/
@@ -18,11 +18,11 @@ body {
 .head_bg {
 	width: 110px;
 	height: 61px;
-	float: left;            /*如果你想顺序写，那么就就让左边块左浮动，右边框右浮动*/
+	float: left;            /*如果你想按正常顺序写，那么就就让左边块左浮动，右边框右浮动*/
 	background-color: #d45d5c;
 } 
 span.text {
-	display: block;           /*行级元素不能设置宽度和高度，也不能设置padding和margin*/
+	display: block;           /*行级元素不能设置宽度和高度，padding和margin的上下方向不起作用*/
 	padding-top: 46px;
 	padding-left: 7px;
 	color: #fff;
@@ -32,7 +32,7 @@ span.head_time {
 	color: #d45d5c;
 	padding-top: 46px;
 }
-#head span,#foot span {
+#head span,#foot span{
 	font-size: 12px;
 	line-height: 14px;
 	font-family: "黑体";
@@ -40,12 +40,15 @@ span.head_time {
 /*中间样式************************************/
 #main {
 	margin-top: 34px;
-}	
+	height: 1228px;
+}
+	
 .main_top_img {
 	position: relative;
 	width: 641px;
 	height: 301px;
 	float: left;
+	cursor: pointer;
 	margin: 0 48px 41px 0;
 
 }
@@ -62,10 +65,9 @@ span.head_time {
 	z-index: 999;
 }
 .main_top_content {
-	/*padding-top: 6px;*/
 	border-top: 2px solid #cc8091; 
 	width: 203px;
-	height: 300px;
+	height: 299px;
 	float: right;
 	position: relative;
 }
@@ -73,37 +75,42 @@ p.title{
 	font-size: 24px;
 	color: #000;
 	font-family: "Microsoft Yahei";
+	padding-top: 6px;
 	text-decoration: underline;
 	line-height: 30px;            /*content-area高度 + 行间距 = 行高*/
-	font-variant: small-caps;          /*采用不用大小的大写字母，只要文本源中出现大写字母，会显示一个更大的大写字母，而只要文本中出现一个小写字母，就会显示一个小型的大写字母*/
+	font-variant: small-caps;          /*采用不同大小的大写字母，只要文本源中出现大写字母，会显示一个更大的大写字母，而只要文本中出现一个小写字母，就会显示一个小型的大写字母*/
 }
 p.sub_title {
 	font-size: 12px;
 	font-family: "楷体";
 	color: #676767;
+	padding-top: 2px;
 	line-height: 10px;
 }
 p.seven {
 	font-size: 116px;
+	line-height: 116px;
+	padding-top: 30px;
 	color: #75b86b;
-	font-family: "Microsoft Yahei";
+	font-family: "微软雅黑";
+	font-weight: bold;
 	font-style: oblique;
-	margin-left: -16px;        /*要自己根据位置在chrom中做调试*/
+	margin-left: -20px;        /*要自己根据位置在chrom中做调试*/
 }
-p.num,p.big,p.small {
+p.num, p.big {
 	font-family: "Microsoft Yahei";
 	color: #cc8091;
 }
 p.num {
 	font-size: 55px;
 	position: absolute;
-	bottom: -10px;
-	left: 10px;
+	bottom: -8px;
+	left: 6px;
 }
 p.big {
 	font-size: 21px;
 	position: absolute;
-	bottom: 12px;
+	bottom: 10px;
 	left: 90px;
 }
 p.small {
@@ -111,60 +118,70 @@ p.small {
 	position: absolute;
 	left: 90px;
 	bottom: 0;
+	font-family: "Microsoft Yahei";
+	color: #c1c0bf;
 }
 /*main_center样式***********************************************/
-.main_center {
-	height: 168px;
-}
 div.what {
-	width: 228px;
-	color: #767777;
+	width: 230px;
+} 
+div.what h1 {
+	color: #418c59;
+} 
+.what_content {
 	font-family: "宋体";
+	color: #767777;
 	line-height: 16px;
-}         
+}       
 div.when {
-	width: 204px;
+	width: 210px;
 	margin-left: 28px;
+}
+div.when h1 {
+	color: #d2994f;
+}
+.when_content {
 	font-family: "Microsoft Yahei";
 	color: #231815;
 	opacity: 0.7;
 	line-height: 16px;
 }
 div.how {
-	width: 132px;
+	width: 140px;
 	margin-left: 30px;
-	font-family: "Microsoft Yahei";
-	opacity: 0.7;
+}
+div.how h1 {
+	color: #cc7680;
+}
+.how_content {
+	color: #767777;
+	font-family: "宋体";
 	line-height: 21px;
 }
 div.what,div.when,div.how {
 	float: left;
-	font-size: 12px;
 } 
 div.what h1,div.when h1,div.how h1 {
-	font-size: 16px;
-	font-weight: bold;
-	text-decoration: underline;
 	font-family: "Microsoft Yahei";
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 16px;
 }
-div.what h1 {
-	color: #418c59;
-	margin-bottom: 13px;
-}
-div.when h1 {
-	color: #d2994f;
-	margin-bottom: 13px;
-}
-div.how h1 {
-	color: #cc7680;
-	margin-bottom: 6px;
+.what_content,.when_content,.how_content {
+	font-size: 12px;
+	padding-left: 1px;
+	margin-top: 10px;
 }
 p.detail {
-	margin-top: 21px;
+	margin-top: 24px;
+	padding-left: 4px;
 }
-p.detail span {
-	color: #cd4a48;
+p.detail span{
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
 	font-style: oblique;
+	color: #cd4a48;
+	line-height: 16px;
 	opacity: 0.7;
 }
 /*main_bottom样式*****************************/
@@ -192,13 +209,12 @@ span.the {
 	font-style: oblique;
 }
 /*main_bottom_right样式**************************/
-.main_bottom_right {
-	float: right;
-	width: 458px;
-}
+
 /*底部样式************************************/
 #foot {
 	border-top: 1px solid #938e8c;
+	width: 892px;
+	height: 59px;
 }
 #foot span {
 	padding-top: 2px;
